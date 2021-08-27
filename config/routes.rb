@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get '/index' => 'home#index'
   get '/add' => 'calculator#add'
   post '/result' => 'calculator#result'
+  #input name을 가져와서 사용할 수 있다.
+  get '/result/:first/:second' => 'calculator#result'
 end

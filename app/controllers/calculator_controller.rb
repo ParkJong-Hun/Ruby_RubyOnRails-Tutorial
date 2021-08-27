@@ -5,6 +5,6 @@ class CalculatorController < ApplicationController
     end
     def result
         #@result = params[:first] + params[:second] -> 문자열로 됨!!
-        @result = params[:first].to_i + params[:second].to_i
+        @result = params[:first].to_i + params[:second].to_i #정수형 계산
     end
 end
