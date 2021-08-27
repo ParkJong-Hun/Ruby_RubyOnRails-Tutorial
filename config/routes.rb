@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   post '/result' => 'calculator#result'
   #input name을 가져와서 사용할 수 있다.
   get '/result/:first/:second' => 'calculator#result'
+  get '/read/index' => 'read_home#index'
+  get '/read/write' => 'read_home#write'
+  post '/read/create' => 'read_home#create'
 end
