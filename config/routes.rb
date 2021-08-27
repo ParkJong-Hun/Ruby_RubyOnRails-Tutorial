@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   #action과 url을 연결하기
   get '/index' => 'home#index'
   get '/add' => 'calculator#add'
+  post '/result' => 'calculator#result'
 end

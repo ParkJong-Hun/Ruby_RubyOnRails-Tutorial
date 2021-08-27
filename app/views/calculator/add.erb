@@ -1,2 +1,7 @@
 <%#add라는 함수의 변수를 사용할 수 있다.%>
-<%= @message %>
+<%# method post: 안보이게 할 것. get: 주소에 보일 것 action: 보내는 위치%>
+<form method="post" action="/result">
+    <input type="number" name="first"> +
+    <input type="number" name="second">
+    <input type="submit"/>
+</form>
