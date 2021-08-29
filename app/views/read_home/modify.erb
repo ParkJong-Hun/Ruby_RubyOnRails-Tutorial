@@ -1,0 +1,6 @@
+<form action="/read/update/<%= @post.id %>" method="post">
+    제목 : <input type="text" name="title" value="<%= @post.title %>"/><br>
+    내용 : <input type="text" name="content" value="<%= @post.content %>"/>
+    <input type="submit"/>
+</form>
+<a href="/read/index">뒤로 돌아가기</a>

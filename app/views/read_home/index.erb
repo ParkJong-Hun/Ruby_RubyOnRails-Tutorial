@@ -1,6 +1,8 @@
 <% @posts.each do |post| %>
-    <%= post.title %><br>
-    <%= post.content %><hr>
+    <%# post.id는 자동으로 생성된 id 값을 가져옴 %>
+    제목 : <%= post.title %> <a href="/read/modify/<%= post.id %>">수정하기</a><br>
+    내용 : <%= post.content %> <a href="/read/delete/<%= post.id %>">삭제하기</a>
+    <hr>
 <% end %>
 <br>
 <a href= "/read/write">글쓰러가기</a>
